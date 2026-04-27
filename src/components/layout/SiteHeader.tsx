@@ -54,6 +54,12 @@ const SiteHeader = () => {
           <span className="hidden md:flex items-center gap-2 text-[10px] font-mono uppercase text-muted-foreground tracking-widest">
             <span className="pulse-dot" /> Operational
           </span>
+          <Link
+            to="/login"
+            className="hidden md:inline-flex text-sm font-medium text-foreground hover:text-primary transition-smooth"
+          >
+            Sign In
+          </Link>
           <Button asChild size="sm" className="hidden md:inline-flex rounded-none">
             <Link to="/contact?intent=quote">Request Quote</Link>
           </Button>
@@ -86,6 +92,12 @@ const SiteHeader = () => {
                 {l.label}
               </NavLink>
             ))}
+            <Link
+              to="/login"
+              className="py-3 px-2 text-sm font-medium border-b border-border text-foreground"
+            >
+              Sign In
+            </Link>
             <Button asChild className="mt-3 rounded-none">
               <Link to="/contact?intent=quote">Request Quote</Link>
             </Button>

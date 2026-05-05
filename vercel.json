@@ -5,5 +5,8 @@
   "outputDirectory": "Client/dist",
   "env": {
     "NODE_ENV": "production"
-  }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
